@@ -1,0 +1,57 @@
+{
+  "_version": "0.0.1",
+  "sap.app": {
+    "_version": "0.0.1",
+    "id": "com.jacobstovall.website",
+    "type": "application",
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "applicationVersion": {
+      "version": "1.0.0"
+    }
+  },
+  "sap.ui": {
+    "_version": "1.1.0",
+    "technology": "UI5",
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    },
+    "supportedThemes": [
+      "sap_hcb",
+      "sap_belize"
+    ],
+    "fullWidth": true
+  },
+  "sap.ui5": {
+    "_version": "1.1.0",
+    "rootView": "com.jacobstovall.website.view.App",
+    "dependencies": {
+      "minUI5Version": "1.30",
+      "libs": {
+        "sap.m": {}
+      }
+    },
+    "models": {},
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "viewPath": "com.jacobstovall.website.view",
+        "controlId": "app",
+        "controlAggregation": "pages"
+      },
+      "routes": [{
+        "pattern": "",
+        "name": "index",
+        "target": "index"
+      }],
+      "targets": {
+        "index": {
+          "viewName": "MainPage"
+        }
+      }
+    }
+  }
+}

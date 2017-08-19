@@ -2,5 +2,5 @@
   xmlns="sap.m"
   xmlns:mvc="sap.ui.core.mvc"
   xmlns:core = "sap.ui.core">
-  <Text text="Hello World" />
+  <App id="app" />
 </mvc:View>

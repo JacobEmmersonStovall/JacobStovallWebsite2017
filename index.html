@@ -16,8 +16,11 @@
       </script>
       <script>
         sap.ui.getCore().attachInit(function(){
-          sap.ui.xmlview({
-            viewName: "com.jacobstovall.website.view.App"
+          new sap.m.Shell({
+            app: sap.ui.core.ComponentContainer({
+              name: "com.jacobstovall.website",
+              height: "100%"
+            })
           }).placeAt("content")
         });
       </script>
